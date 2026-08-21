@@ -1,0 +1,69 @@
+.star-background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.star {
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 50%;
+  animation: twinkle ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+.meteor {
+  position: absolute;
+  background-color: #b74b4b;
+  border-radius: 50%;
+  box-shadow: 0 0 14px 3px rgba(183, 75, 75, 0.6);
+  transform: rotate(100deg);
+  opacity: 0;
+}
+
+.animation-meteor {
+  animation: meteorFall linear infinite;
+}
+
+.animation-meteor::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 5px;
+  background: linear-gradient(90deg, #820d0d, transparent);
+}
+
+@keyframes meteorFall {
+  0% {
+    transform: rotate(215deg) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(215deg) translateX(-800px);
+    opacity: 0;
+  }
+}
