@@ -10,6 +10,70 @@ function Projects() {
             className="project-card"
             data-aos="fade-up"
             data-aos-duration="1500"
+            data-aos-delay="400"
+          >
+            <div className="project-info">
+              <h3>Full-Stack Role-Based Admin Dashboard</h3>
+              <div className="tech-tags">
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>MySQL </span>
+                <span>JWT</span>
+                <span>Bcrypt</span>
+              </div>
+              <p>
+                Complete full-stack application featuring Role-Based Access
+                Control (RBAC). Includes separate dynamic interfaces for regular
+                users and administrators, strict route protection preventing
+                unauthorized access, and full database CRUD operations.
+              </p>
+
+              <div className="project-links">
+                <a
+                  href="https://dashboard-mo-1207.vercel.app/"
+                  target="_blank"
+                  className="btn-sm"
+                >
+                  <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live Demo
+                </a>
+                <a
+                  href="https://github.com/mohamed1232007/Dashboard"
+                  target="_blank"
+                  className="btn-sm outline"
+                >
+                  <i className="fa-brands fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            className="project-card"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+          >
+            <div className="project-info">
+              <h3>Role-Based Admin Dashboard System</h3>
+              <div className="tech-tags">
+                <span>React.js</span> <span>Node.js</span>
+                <span>Express.js</span> <span>MongoDB</span>
+                <span>JWT</span> <span>RBAC</span>
+              </div>
+              <p>
+                Complete full-stack application featuring Role-Based Access
+                Control (RBAC). Includes separate dynamic interfaces for regular
+                users and administrators, strict route protection preventing
+                unauthorized access, and full database CRUD operations.
+              </p>
+
+              <span className="badge-update">Currently Under Update</span>
+            </div>
+          </div>
+          <div
+            className="project-card"
+            data-aos="fade-up"
+            data-aos-duration="1500"
             data-aos-delay="200"
           >
             <div className="project-info">
@@ -137,7 +201,7 @@ function Projects() {
                 Dashboard for managing active sessions.
               </p>
               <div className="project-links">
-                <a
+                {/* <a
                   href="https://cs-system-8b279.web.app/"
                   target="_blank"
                   className="btn-sm"
@@ -151,7 +215,10 @@ function Projects() {
                   className="btn-sm outline"
                 >
                   <i className="fa-brands fa-github"></i> Source Code
-                </a>
+                </a> */}
+                <h3>
+                  <span className="badge-update">Currently Under Update</span>
+                </h3>
               </div>
             </div>
           </div>

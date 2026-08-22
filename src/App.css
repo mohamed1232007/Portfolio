@@ -708,3 +708,16 @@ footer .text span {
         margin: 0 0.5rem;
     }
 }
+
+.badge-update {
+  font-size: 1.3rem;
+  background-color: rgba(234, 179, 8, 0.15);
+  color: #eab308;
+  border: 1px solid rgba(234, 179, 8, 0.4);
+  padding: 3px 8px;
+  border-radius: 12px;
+  margin-left: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
